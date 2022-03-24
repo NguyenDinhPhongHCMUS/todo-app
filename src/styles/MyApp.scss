@@ -1,0 +1,61 @@
+//Man hinh Laptop
+.my-app
+{
+    width: 40%;
+    margin: 0px auto;
+    border: 1px solid #e3e3e3;
+    padding: 20px 20px;
+    border-radius: 5px;
+    min-height: 500px;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title
+    {
+        margin: 15px;
+        text-align: center;
+    }
+    .show-list-todos
+    {
+        overflow-y: auto;
+    }
+    .copy-right
+    {
+        margin-top:30px;
+    }
+    .show-list-todos
+    {
+        flex: 1;
+    }
+}
+
+
+//Man hinh Tablet
+@media screen and (max-width:1024px)
+{
+.my-app
+{
+    width: 80%;
+    height: 100vh;
+    padding: 10px 10px;
+    margin:0px auto;
+    .title
+    {
+        margin:20px;
+    }
+    .copy-right
+    {
+        font-size: 15px;
+    }
+}
+}
+
+//Man hinh Mobile
+@media screen and (max-width:740px)
+{
+    .my-app
+    {
+        width: 95%;
+    }
+}
